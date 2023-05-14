@@ -71,7 +71,7 @@ def main():
                 with NamedTemporaryFile(dir=tmp_dir, suffix='.csv', delete=False) as temp_file:
                     temp_file_output_path = temp_file.name
 
-                with st.spinner("Loading..."):
+                with st.spinner("Processing..."):
                     result = autogpt_process(temp_file_input_path, temp_file_output_path)
 
                 st.success("Task completed!")
