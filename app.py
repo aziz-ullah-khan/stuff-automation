@@ -5,15 +5,6 @@ from tempfile import NamedTemporaryFile
 import os
 from autogpt_accessories import autogpt_process
 
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
-
 # Set the temporary directory path
 tmp_dir = os.path.join(os.getcwd(), "tmp")
 
